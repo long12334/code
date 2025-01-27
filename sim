@@ -1,0 +1,270 @@
+td:nth-child(2),
+th:nth-child(2) {
+width: 20px;
+  padding: 2px 3px;
+  padding: 2px 7px;
+word-wrap: break-word;
+text-align: center;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+width: 18%;
+padding: 3.5px 0px;
+word-wrap: break-word;
+text-align: center;
+}
+td:nth-child(1),
+td:nth-child(4) {
+font-size: 12px;
+font-weight: bold;
+}
+td:nth-child(4),
+th:nth-child(4) {
+width: 18px;
+padding: 2px 6px;
+word-wrap: break-word;
+text-align: center;
+}
+
+th {
+background-color: red;
+color: white;
+}
+
+.moc {
+background-color: #00b050;
+color: white;
+font-weight: bold;
+border-radius: 30px;
+padding: 2px 10px;
+text-align: center;
+border: 1px solid #006400;
+}
+
+.hoa {
+background-color: #ff0000;
+color: white;
+font-weight: bold;
+border-radius: 30px;
+padding: 2px 10px;
+text-align: center;
+border: 1px solid #800000;
+}
+
+.thuy {
+background-color: #00b0f0;
+color: white;
+font-weight: bold;
+border-radius: 30px;
+padding: 2px 10px;
+text-align: center;
+border: 1px solid #005f99;
+}
+
+.tho {
+background-color: #808080;
+color: white;
+font-weight: bold;
+border-radius: 30px;
+padding: 2px 10px;
+text-align: center;
+border: 1px solid #4d4d4d;
+}
+
+.kim {
+background-color: #ffc000;
+color: white;
+font-weight: bold;
+border-radius: 30px;
+padding: 2px 10px;
+text-align: center;
+border: 1px solid #b38600;
+}
+
+.gia {
+color: #ff0000;
+font-weight: bold;
+}
+
+.sim {
+color: #000000;
+font-weight: bold;
+}
+
+/* .filter-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 10px;
+ margin-bottom: 20px;
+ padding: 5px;
+ background-color: #f5f5f5;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+} */
+.filter-container {
+position: fixed;
+top: 20px;
+right: 20px;
+width: 180px;
+z-index: 1000;
+background-color: #f5f5f5;
+padding: 15px;
+/* Thêm padding bên trong */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+/* Các phần tử xếp dọc */
+gap: 15px;
+/* Khoảng cách giữa các phần tử */
+}
+
+.filter-container .input-group {
+position: relative;
+}
+
+.filter-container input {
+padding: 8px;
+font-size: 1rem;
+width: 163px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.filter-container button {
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+body {
+margin: 10px;
+}
+
+h1 {
+font-size: 1.5rem;
+}
+
+input[type="file"] {
+font-size: 0.9rem;
+padding: 8px;
+}
+
+th,
+td {
+font-size: 0.9rem;
+padding: 8px;
+}
+
+.filter-container {
+width: 138px;
+}
+
+.filter-container input,
+.filter-container select {
+font-size: 0.9rem;
+padding: 8px;
+width: 120px;
+}
+
+.scroll-button {
+font-size: 0.9rem;
+padding: 8px 15px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 1.2rem;
+}
+
+.filter-container input,
+.filter-container select {
+font-size: 0.8rem;
+padding: 6px;
+}
+
+th,
+td {
+font-size: 0.8rem;
+padding: 6px;
+}
+
+.scroll-button {
+font-size: 0.8rem;
+padding: 6px 10px;
+}
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+button {
+padding: 5px 10px;
+font-size: 0.9rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+button[style*="background-color: #FFA500"] {
+background-color: #007bff;
+
+color: white;
+}
+
+tr.highlighted {
+background-color: yellow;
+border: #45a049;
+}
+
+.button-container {
+position: fixed;
+
+top: 20px;
+
+left: 20px;
+
+display: flex;
+flex-direction: column;
+
+align-items: flex-start;
+gap: 5px;
+}
+
+.button-container input[type="file"],
+.button-container button {
+width: 120px;
+padding: 5px 10px;
+font-size: 0.8rem;
+cursor: pointer;
+}
+
+.button-container button {
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.button-container button:hover {
+background-color: #45a049;
+}
